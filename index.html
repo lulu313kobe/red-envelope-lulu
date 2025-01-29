@@ -52,8 +52,9 @@
     <div class="result" id="result"></div>
     
     <script>
-        const options = ["再延1年", "好意思", "888", "168", "1688", "978", "活該沒中", "碩班快樂"];
-        let drawn = false
+        let options = ["延畢1年", "延畢2年", "888", "168", "1688", "978", "活該沒中", "碩班快樂"];
+        options = options.sort(() => Math.random() - 0.5); // 隨機打亂獎項順序
+        let drawn = false;
 
         function draw(selectedEnvelope, index) {
             if (drawn) return;
@@ -72,3 +73,4 @@
     </script>
 </body>
 </html>
+
